@@ -3,7 +3,7 @@ export const projects = [
     title: "Next JS Real Estate Website",
     description:
       "Using React.js, Next.js, Rapid API and Chakra UI I built a Real Estate Website. It showcases various properties and has multiple filter and search options.",
-    image: "/images/next-js-realestate.jpeg",
+    image: "/images/realestate.jpeg",
     tags: ["NextJs", "React", "Rapid API"],
     link: "http://next-js-real-estate-website.vercel.app/",
     github: "https://github.com/zinx110/Next-js-real-estate-website",
@@ -13,7 +13,7 @@ export const projects = [
     title: "E-Commerce",
     description:
       "E-Commerce website using React.js , JavaScript and Redux, as well as Stripe for card transactions.",
-    image: "/images/2.png",
+    image: "/images/ecommerce.jpeg",
     tags: ["React", "JavaScript", "Redux"],
     link: "https://ecommerce-webshop1.netlify.app/",
     github:
