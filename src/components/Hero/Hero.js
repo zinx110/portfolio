@@ -16,9 +16,8 @@ const Hero = () => (
         I'm <Span>zinx</Span> (Tasdid Hossain)
       </SectionTitle>
       <SectionText>
-        My purpose is to develop aspiring websites using various technologies
-        that will solve real problems and to make people happy, even if only a
-        little.
+        I am a Computer Science student in AIUB and a web developer skilled in
+        React.js, Next.js, Tailwind CSS and many other popular web technologies.
       </SectionText>
       <Button
         onClick={() => (window.location = "https://linkedin.com/in/zinx110")}

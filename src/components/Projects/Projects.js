@@ -12,6 +12,7 @@ import {
   TitleContent,
   UtilityList,
   Img,
+  ImgContainer,
 } from "./ProjectsStyles";
 import {
   Section,
@@ -28,7 +29,9 @@ const Projects = () => (
     <GridContainer>
       {projects.map(({ id, image, title, description, tags, github, link }) => (
         <BlogCard key={id}>
-          <Img src={image} alt={title} />
+          <ImgContainer>
+            <Img src={image} alt={title} />
+          </ImgContainer>
           <TitleContent>
             <HeaderThree title>{title}</HeaderThree>
             <Hr />
@@ -44,7 +47,7 @@ const Projects = () => (
           </div>
           <UtilityList>
             <ExternalLinks href={github}>
-              <AiFillGithub />{" "}
+              <AiFillGithub /> Git{" "}
             </ExternalLinks>
             <ExternalLinks href={link}>Visit</ExternalLinks>
           </UtilityList>

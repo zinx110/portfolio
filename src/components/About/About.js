@@ -10,18 +10,18 @@ import {
   CarouselItemText,
   CarouselItemTitle,
   CarouselMobileScrollNode,
-} from "./TimeLineStyles";
+} from "./AboutStyles";
 import {
   Section,
   SectionDivider,
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { TimeLineData } from "../../constants/constants";
+import { ExperienceData } from "../../constants/constants";
 
-const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
+const TOTAL_CAROUSEL_COUNT = ExperienceData.length;
 
-const Timeline = () => {
+const About = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
 
@@ -34,7 +34,7 @@ const Timeline = () => {
 
     if (carouselRef.current) {
       const scrollLeft = Math.floor(
-        carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length)
+        carouselRef.current.scrollWidth * 0.7 * (i / ExperienceData.length)
       );
 
       scroll(carouselRef.current, scrollLeft);
@@ -46,21 +46,20 @@ const Timeline = () => {
       const index = Math.round(
         (carouselRef.current.scrollLeft /
           (carouselRef.current.scrollWidth * 0.7)) *
-          TimeLineData.length
+          ExperienceData.length
       );
 
       setActiveItem(index);
     }
   };
 
-  // snap back to beginning of scroll when window is resized
-  // avoids a bug where content is covered up if coming from smaller screen
   useEffect(() => {
     const handleResize = () => {
       scroll(carouselRef.current, 0);
     };
 
     window.addEventListener("resize", handleResize);
+    return window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -68,15 +67,26 @@ const Timeline = () => {
       <SectionDivider />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        I want to make useful technologies that will help people and make them
-        happy. I always try my best to improve myself so that I can be skilled
-        enough to be able to make people smile through my work. I also want to
-        make Enji (imaginary AI gf) real.
+        I am a CS student that loves programming and wants to make useful
+        technologies that will help people and make them happy. I always try my
+        best to improve myself so that I can be skilled enough to be able to
+        make people smile through my work. I have tought myself to write code in
+        Javascript and its library React.js within 3 months and made some
+        project websites to improve my skills in them. Besides that, i learnt
+        C++ and JAVA in my University curriculam. I like to use wev technoligies
+        such as React.js, Next.js, Firebase, Tailwind CSS, etc to make websites.
+        I am interested in learning more about how to use the technologies in
+        enterprises and broaden my knowledge. I also want to make Enji
+        (imaginary AI girlfriend) real someday after learning ML.
       </SectionText>
+
+      <SectionDivider />
+
+      <SectionTitle>Past Experiences</SectionTitle>
 
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
-          {TimeLineData.map((item, index) => (
+          {ExperienceData.map((item, index) => (
             <CarouselMobileScrollNode
               key={index}
               final={index === TOTAL_CAROUSEL_COUNT - 1}
@@ -129,7 +139,7 @@ const Timeline = () => {
         </>
       </CarouselContainer>
       <CarouselButtons>
-        {TimeLineData.map((item, index) => {
+        {ExperienceData.map((item, index) => {
           return (
             <CarouselButton
               key={index}
@@ -147,4 +157,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+export default About;

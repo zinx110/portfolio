@@ -12,23 +12,22 @@ import {
   ListItem,
   ListParagraph,
   ListTitle,
-} from "./TechnologiesStyles";
+} from "./SkillsStyles";
 
-const Technologies = () => (
+const Skills = () => (
   <Section id="tech">
     <SectionDivider />
-    <SectionTitle>Technologies</SectionTitle>
+    <SectionTitle>Skills</SectionTitle>
     <SectionText>
-      I have worked with a variety of technologies in web development. Including
-      Back-end and Front-end.
+      I am skiled in a variety of technologies in web development and
+      programming, Including Front-end and Back-end technologies.
     </SectionText>
     <ListItem>
       <DiReact size="3rem" />
       <ListContainer>
         <ListTitle>Front-End</ListTitle>
         <ListParagraph>
-          Experienced with <br />
-          React.js, Next.js and Redux
+          React.js, Next.js, Firebase, Tailwind CSS, Redux
         </ListParagraph>
       </ListContainer>
     </ListItem>
@@ -36,23 +35,17 @@ const Technologies = () => (
       <DiNodejs size="3rem" />
       <ListContainer>
         <ListTitle>Back-End</ListTitle>
-        <ListParagraph>
-          Experienced with <br />
-          Node.js, Express and MongoDB
-        </ListParagraph>
+        <ListParagraph>REST API, Node.js, Express and MongoDB</ListParagraph>
       </ListContainer>
     </ListItem>
     <ListItem>
       <DiZend size="3rem" />
       <ListContainer>
-        <ListTitle>UI/UX</ListTitle>
-        <ListParagraph>
-          Experienced with <br />
-          tools like Figma
-        </ListParagraph>
+        <ListTitle>Other</ListTitle>
+        <ListParagraph>JAVA, C++</ListParagraph>
       </ListContainer>
     </ListItem>
   </Section>
 );
 
-export default Technologies;
+export default Skills;

@@ -1,19 +1,19 @@
 import React from "react";
-import { AcomplishmentsData } from "../../constants/constants";
+import { EducationData } from "../../constants/constants";
 
 import {
   Section,
   SectionDivider,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-import { Box, Boxes, BoxText, BoxTitle } from "./AcomplishmentsStyles";
+import { Box, Boxes, BoxText, BoxTitle } from "./EducationStyles";
 
-const Acomplishments = () => (
+const Education = () => (
   <Section>
     <SectionDivider />
-    <SectionTitle>Education Information</SectionTitle>
+    <SectionTitle>Education</SectionTitle>
     <Boxes>
-      {AcomplishmentsData.map((card, index) => (
+      {EducationData.map((card, index) => (
         <Box key={index}>
           <BoxTitle>{card.title}</BoxTitle>
           <BoxText>{card.text}</BoxText>
@@ -23,4 +23,4 @@ const Acomplishments = () => (
   </Section>
 );
 
-export default Acomplishments;
+export default Education;
