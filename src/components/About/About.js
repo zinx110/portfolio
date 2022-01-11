@@ -67,17 +67,7 @@ const About = () => {
       <SectionDivider />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        I am a CS student that loves programming and wants to make useful
-        technologies that will help people and make them happy. I always try my
-        best to improve myself so that I can be skilled enough to be able to
-        make people smile through my work. I have tought myself to write code in
-        Javascript and its library React.js within 3 months and made some
-        project websites to improve my skills in them. Besides that, i learnt
-        C++ and JAVA in my University curriculam. I like to use wev technoligies
-        such as React.js, Next.js, Firebase, Tailwind CSS, etc to make websites.
-        I am interested in learning more about how to use the technologies in
-        enterprises and broaden my knowledge. I also want to make Enji
-        (imaginary AI girlfriend) real someday after learning ML.
+I am a CS student that loves programming and wants to make useful technologies that will help people and make them happy. I always try my best to improve myself so that I can be skilled enough to be able to make people smile through my work. I have taught myself to write code in Javascript and its library React.js within 3 months and made some project websites to improve my skills in them. Besides that, I learned C++ and JAVA in my University curriculum. I like to use web technologies such as React.js, Next.js, Firebase, Tailwind CSS, etc to make websites. I am interested in learning more about how to use the technologies in enterprises and broadening my knowledge. I also want to make Enji (imaginary AI girlfriend) real someday after learning ML.
       </SectionText>
 
       <SectionDivider />
