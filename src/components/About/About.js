@@ -72,7 +72,7 @@ const About = () => {
                 I am a CS student and freelance web and mobile app developer
                 working in Fiverr. I have created multiple web applicatiosn and
                 a mobile app for different clients in FIverr. I want to keep
-                learning and working on exciting applications.
+                learning and working on exciting applications
             </SectionText>
 
             <SectionDivider />
