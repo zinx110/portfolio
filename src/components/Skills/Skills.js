@@ -37,7 +37,7 @@ const Skills = () => (
             <ListContainer>
                 <ListTitle>Back-End</ListTitle>
                 <ListParagraph>
-                    REST API, Node.js, Express and MongoDB, PHP{" "}
+                    REST API, Node.js, Express and MongoDB, PHP, MySQL, JEST{" "}
                 </ListParagraph>
             </ListContainer>
         </ListItem>
